@@ -1,0 +1,138 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #8A1538 0%, #560D23 100%);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 5px solid #D4AF37;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header h1 span {
+    color: #D4AF37;
+    font-weight: 300;
+}
+
+/* Menu de Filtros */
+.filter-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.filter-btn {
+    background-color: #fff;
+    border: 2px solid #8A1538;
+    color: #8A1538;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: #8A1538;
+    color: #fff;
+}
+
+/* Grid de Posts */
+.blog-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Card de Post */
+.post-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-header {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Cores das Tags */
+.destaques-tag { background-color: #D4AF37; color: #333; }
+.curiosidades-tag { background-color: #1d70b8; }
+.jogos-tag { background-color: #008751; }
+
+.post-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.post-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #560D23;
+}
+
+.post-date {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.post-content p {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    margin-top: auto;
+    color: #8A1538;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
